@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*p,*/
+        /*p::not-real {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*is 가상선택자는 forgiving하다(즉 일부가 유효하지 않아도 유효하지 않은 부분만 버리고 적용 됌)*/
+        :is(p, p::not-real){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>반갑습니다.</p>
+</body>
+</html>
